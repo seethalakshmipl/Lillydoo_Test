@@ -1,10 +1,3 @@
-.main_container {
-  max-height: 400px;
-  overflow-y: auto;
-}
-.MyClass{
-  background-image: url('../images/lillydoo-testpaket-40.jpg') !important;
-}
 .jumbotron {
   background-image: url('../images/lillydoo-testpaket-header-medium.jpg');
   background-position: center;
@@ -22,6 +15,61 @@
   border-style: solid;
   border-width: 0;
 }
+.test_package_container .test_package_row .test_package_img_div .testpaket_img {
+  position: relative;
+  width: 80%;
+}
+.test_package_container .test_package_row .test_package_img_div .oekotex_img {
+  position: absolute;
+  top: 40px;
+  left: 215px;
+  width: 150px;
+}
+.test_package_row .row  .selective_btn_span{
+  font-size: 45px;
+}
+.test_package_row .row  .selective_btn_kg_span{
+  font-size: 28px;
+}
+.test_package_row p{
+  margin-top:20px;
+  font-size: 33px;
+}
+.test_package_row ul{
+  padding: 15px;
+}
+.test_package_row .cart_btn{
+  background-color: #00afab;
+  color: #fff;
+  border-style: none;
+  width: 100%;
+  border-radius: 0px;
+  text-transform: uppercase;
+  height: 75px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+.test_package_row  .row .selective_btn{
+  border: 1px solid #7c7c7c;
+  margin-right: 25px;
+  background: none;
+  width: 30%;
+  height: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: gray;
+}
+.test_package_row  .row .active, .selective_btn:hover{
+  background: #00afab !important;
+  border:1px solid #00afab !important;
+  color: #fff !important;
+}
+.test_package_row h3{
+  font-size: 33px
+}
+.test_package_row ul li{
+  font-size: 33px
+}
 .subscription_container {
   background: #f8f8f8;
 }
@@ -29,7 +77,7 @@
   margin-top: 20px;
 }
 .subscription_container p {
-  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .subscription_container .subscription-icons-icon {
   margin-bottom: 25px;
@@ -43,6 +91,7 @@
 .subscription_container h4 {
   margin-bottom: 20px;
   font-weight: bold;
+  font-size: 25px;
 }
 .diaper_container {
   margin-top: 20px;
@@ -58,59 +107,27 @@
 }
 .diaper_container .diaper_ul {
   padding: 20px;
+  font-size:33px;
 }
-.test_package_container .test_package_row .test_package_img_div .testpaket_img {
-  position: relative;
-  width: 80%;
+.diaper_container .diaper_ul li{
+ font-size: 25px;
 }
-.test_package_container .test_package_row .test_package_img_div .oekotex_img {
-  position: absolute;
-  top: 40px;
-  left: 150px;
-  width: 150px;
-}
-.test_package_row h3{
-  font-size: 25px;
-}
-.test_package_row p{
-  font-size: 15px;
-  margin-top:20px;
-}
-.test_package_row ul{
-  padding: 15px;
-}
-.test_package_row ul li{
-  font-size: 15px
-}
-.test_package_row .cart_btn{
-  background-color: #00afab;
-  color: #fff;
-  height: 50px;
-  border-style: none;
-  width: 100%;
-  border-radius: 0px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.test_package_row  .row .selective_btn{
-  border: 1px solid #7c7c7c;
-  margin-right: 10px;
-  background: none;
-  width: 95px;
-  height: 55px;
-}
+
 /* ----------- Mobile ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
   .jumbotron {
     background-image: url('../images/lillydoo-testpaket-header-small.jpg');
-    height: 950px;
+    height: 1190px;
     padding-top: 200px;
   }
   .header_img_div {
     position: absolute;
-    right: 45px;
-    top: 565px;
+    right: 55px;
+    top: 675px;
     width: 210px;
+  }
+  .test_package_row ul{
+    margin-bottom: 45px;
   }
   .jumbotron h1 {
     font-size: 85px !important;
@@ -123,8 +140,48 @@
     height: 100px;
     padding: 20px;
   }
-  .subscription_container h1 {
+  .test_package_container .test_package_row .test_package_img_div .oekotex_img {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    width: 190px;
+  }
+  .test_package_row h3{
+    font-size: 45px;
+  }
+  .test_package_row p{
+    font-size: 33px;
+  }
+  .test_package_row ul li{
+    font-size: 33px
+  }
+  .test_package_row .cart_btn{
+    height: 75px;
+    width: 100%;
+    margin-bottom: 50px;
     font-size: 30px;
+  }
+  .test_package_img_div{
+    margin-bottom: 70px;
+  }
+  .test_package_row  .row .selective_btn{
+    border: 1px solid #7c7c7c;
+    margin-right: 25px;
+    background: none;
+    width: 30%;
+    height: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: gray;
+  }
+  .test_package_row .row  .selective_btn_span{
+    font-size: 45px;
+  }
+  .test_package_row .row  .selective_btn_kg_span{
+    font-size: 28px;
+  }
+  .subscription_container h1 {
+    font-size: 45px;
   }
   .subscription_container a {
     font-size: 28px;
@@ -133,7 +190,7 @@
     font-size: 25px;
   }
   .subscription-icons-item .subcription_p {
-    font-size: 28px;
+    font-size: 33px;
   }
   .subscription-icons-icon img {
     width: 180px;
@@ -142,7 +199,8 @@
     width: 300px;
   }
   .diaper_container .diaper_row h1 {
-    font-size: 35px;
+    font-size: 45px;
+    margin-bottom: 80px;
   }
   .diaper_container .diaper_row h4 {
     font-size: 35px;
@@ -153,12 +211,13 @@
   .diaper_container .diaper_ul li {
     font-size: 30px;
   }
+  
 }
 /* ----------- ipad -----------  */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
   .jumbotron {
     background-image: url('../images/lillydoo-testpaket-header-medium.jpg');
-    height: 450px;
+    height: 565px;
     padding-top: 30px;
   }
   .jumbotron h1 {
@@ -168,8 +227,8 @@
   }
   .header_img_div {
     position: absolute;
-    right: 180px;
-    top: 208px;
+    right: 160px;
+    top: 250px;
     width: 175px;
   }
   .jumbotron .btn {
@@ -177,6 +236,44 @@
     font-size: 20px;
     height: 60px;
     padding: 15px;
+  }
+  .test_package_container .test_package_row .test_package_img_div .oekotex_img {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    width: 190px;
+  }
+  .test_package_row h3{
+    font-size: 25px;
+  }
+  .test_package_row p{
+    font-size: 17px;
+  }
+  .test_package_row ul li{
+    font-size: 17px
+  }
+  .test_package_row .cart_btn{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+  .test_package_row  .row .selective_btn{
+    border: 1px solid #7c7c7c;
+    margin-right: 10px;
+    background: none;
+    width: 30%;
+    height: 75px;
+    margin-top:20px;
+    cursor: pointer;
+    color: gray;
+  }
+  .test_package_row .row  .selective_btn_span{
+    font-size: 23px;
+  }
+  .test_package_row .row  .selective_btn_kg_span{
+    font-size: 13px;
   }
   .subscription_container h1 {
     font-size: 30px;
@@ -208,6 +305,7 @@
   .diaper_container .diaper_ul li {
     font-size: 20px;
   }
+ 
 }
 /* ----------- ipad pro ----------- */
 @media screen and (min-device-width: 1024px) and (max-device-width: 1365px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -236,6 +334,42 @@
     font-size: 15px;
     height: 45px;
     padding: 12px;
+  }
+  .test_package_container .test_package_row .test_package_img_div .oekotex_img {
+    position: absolute;
+    top: 30px;
+    left: 110px;
+    width: 115px;
+  }
+  .test_package_row h3{
+    font-size: 25px;
+  }
+  .test_package_row p{
+    font-size: 15px;
+  }
+  .test_package_row ul li{
+    font-size: 15px
+  }
+  .test_package_row .cart_btn{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+  .test_package_row  .row .selective_btn{
+    border: 1px solid #7c7c7c;
+    margin-right: 10px;
+    background: none;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    color: gray;
+  }
+  .test_package_row .row  .selective_btn_span{
+    font-size: 16px;
+  }
+  .test_package_row .row  .selective_btn_kg_span{
+    font-size: 11px;
   }
   .subscription_container h1 {
     font-size: 25px;
@@ -289,6 +423,41 @@
     font-size: 15px;
     height: 45px;
     padding: 12px;
+  }
+  .test_package_container .test_package_row .test_package_img_div .oekotex_img {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    width: 150px;
+  }
+  .test_package_row h3{
+    font-size: 25px;  
+  }
+  .test_package_row p{
+    font-size: 15px;
+  }
+  .test_package_row ul li{
+    font-size: 15px
+  }
+  .test_package_row .cart_btn{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+  }
+  .test_package_row  .row .selective_btn{
+    border: 1px solid #7c7c7c;
+    margin-right: 10px;
+    background: none;
+    width: 95px;
+    height: 55px;
+    cursor: pointer;
+    color: gray;
+  }
+  .test_package_row .row  .selective_btn_span{
+    font-size: 16px;
+  }
+  .test_package_row .row  .selective_btn_kg_span{
+    font-size: 14px;
   }
   .subscription_container h1 {
     font-size: 25px;
