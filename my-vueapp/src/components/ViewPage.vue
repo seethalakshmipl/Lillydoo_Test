@@ -1,4 +1,4 @@
-<template>
+<template @load="setActiveButton()">
   <div class="main_container">
     <!-- Header Image Container -->
     <div class="jumbotron">
@@ -180,20 +180,19 @@ export default {
     // Change Image and text Function
     changeImage(event) {
       // TestPacket Image Change Variables
-
-      var path = require('../assets/images/lillydoo-testpaket-' +
+      let path = require('../assets/images/lillydoo-testpaket-' +
         event +
         '.jpg')
       document.getElementById('img_id').src = path
 
       // Diaper Image and Text Change variables
 
-      var waterWipesPath = require('../assets/images/sensitive-wipes-15-small.jpg')
-      var waterWipes_text = '15 FEUCHTTÜCHER MIT 99 % WASSER'
-      var sensitiveWipes_text = '15 SENSITIVE FEUCHTTÜCHER'
-      var waterWipesNatural_text =
+      let waterWipesPath = require('../assets/images/sensitive-wipes-15-small.jpg')
+      let waterWipes_text = '15 FEUCHTTÜCHER MIT 99 % WASSER'
+      let sensitiveWipes_text = '15 SENSITIVE FEUCHTTÜCHER'
+      let waterWipesNatural_text =
         'Natürlich rein, extra mild, Alternative zu "Wasser & Watte"'
-      var waterWipesThick_text = 'Extra dickes und kompostierbares Tuch'
+      let waterWipesThick_text = 'Extra dickes und kompostierbares Tuch'
 
       // Diaper Image and Text Change Functions
       if (event === 40 || event === 50) {
@@ -213,19 +212,26 @@ export default {
           'waterWipesNaturalText_id'
         ).innerHTML = waterWipesNatural_text
       }
+      this.setActiveButton();
+    },
 
-      // Active Class for highlighting button color
-      var selectiveButton = document.getElementById('selective_btn_id')
-      var buttons = selectiveButton.getElementsByClassName('selective_btn')
-      for (var i = 0; i < buttons.length; i++) {
+    // Active Class for highlighting button color
+    setActiveButton() {
+      let selectiveButton = document.getElementById('selective_btn_id')
+      let buttons = selectiveButton.getElementsByClassName('selective_btn')
+      for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function() {
-          var current = document.getElementsByClassName('active')
+          let current = document.getElementsByClassName('active')
           current[0].className = current[0].className.replace(' active', '')
           this.className += ' active'
         })
       }
     }
-  }
+  },
+  
+  mounted(){
+    this.setActiveButton()
+ }
 }
 </script>
 <style>
