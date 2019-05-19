@@ -1,0 +1,317 @@
+.main_container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.MyClass{
+  background-image: url('../images/lillydoo-testpaket-40.jpg') !important;
+}
+.jumbotron {
+  background-image: url('../images/lillydoo-testpaket-header-medium.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.jumbotron .btn {
+  background-color: #00afab;
+  border-color: #99dfdd;
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+}
+.subscription_container {
+  background: #f8f8f8;
+}
+.subscription_container .subscription_row {
+  margin-top: 20px;
+}
+.subscription_container p {
+  margin-top: 20px;
+}
+.subscription_container .subscription-icons-icon {
+  margin-bottom: 25px;
+}
+.subscription_container h1 {
+  margin-bottom: 55px;
+}
+.subscription_container a {
+  color: #00afab;
+}
+.subscription_container h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.diaper_container {
+  margin-top: 20px;
+}
+.diaper_container .diaper_row {
+  margin-top: 20px;
+}
+.diaper_container .diaper_row h1 {
+  margin-bottom: 35px;
+}
+.diaper_container .diaper_row h4 {
+  font-weight: bold;
+}
+.diaper_container .diaper_ul {
+  padding: 20px;
+}
+.test_package_container .test_package_row .test_package_img_div .testpaket_img {
+  position: relative;
+  width: 80%;
+}
+.test_package_container .test_package_row .test_package_img_div .oekotex_img {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  width: 150px;
+}
+.test_package_row h3{
+  font-size: 25px;
+}
+.test_package_row p{
+  font-size: 15px;
+  margin-top:20px;
+}
+.test_package_row ul{
+  padding: 15px;
+}
+.test_package_row ul li{
+  font-size: 15px
+}
+.test_package_row .cart_btn{
+  background-color: #00afab;
+  color: #fff;
+  height: 50px;
+  border-style: none;
+  width: 100%;
+  border-radius: 0px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.test_package_row  .row .selective_btn{
+  border: 1px solid #7c7c7c;
+  margin-right: 10px;
+  background: none;
+  width: 95px;
+  height: 55px;
+}
+/* ----------- Mobile ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  .jumbotron {
+    background-image: url('../images/lillydoo-testpaket-header-small.jpg');
+    height: 950px;
+    padding-top: 200px;
+  }
+  .header_img_div {
+    position: absolute;
+    right: 45px;
+    top: 565px;
+    width: 210px;
+  }
+  .jumbotron h1 {
+    font-size: 85px !important;
+    margin-bottom: 65px;
+    text-align: center;
+  }
+  .jumbotron .btn {
+    width: 100%;
+    font-size: 37px;
+    height: 100px;
+    padding: 20px;
+  }
+  .subscription_container h1 {
+    font-size: 30px;
+  }
+  .subscription_container a {
+    font-size: 28px;
+  }
+  .subscription_container h4 {
+    font-size: 25px;
+  }
+  .subscription-icons-item .subcription_p {
+    font-size: 28px;
+  }
+  .subscription-icons-icon img {
+    width: 180px;
+  }
+  .diaper_container .diaper_row .media-object {
+    width: 300px;
+  }
+  .diaper_container .diaper_row h1 {
+    font-size: 35px;
+  }
+  .diaper_container .diaper_row h4 {
+    font-size: 35px;
+  }
+  .diaper_container .diaper_ul {
+    padding: 50px;
+  }
+  .diaper_container .diaper_ul li {
+    font-size: 30px;
+  }
+}
+/* ----------- ipad -----------  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+  .jumbotron {
+    background-image: url('../images/lillydoo-testpaket-header-medium.jpg');
+    height: 450px;
+    padding-top: 30px;
+  }
+  .jumbotron h1 {
+    font-size: 42px !important;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .header_img_div {
+    position: absolute;
+    right: 180px;
+    top: 208px;
+    width: 175px;
+  }
+  .jumbotron .btn {
+    width: 100%;
+    font-size: 20px;
+    height: 60px;
+    padding: 15px;
+  }
+  .subscription_container h1 {
+    font-size: 30px;
+  }
+  .subscription_container a {
+    font-size: 18px;
+  }
+  .subscription_container h4 {
+    font-size: 22px;
+  }
+  .subscription-icons-item .subcription_p {
+    font-size: 16px;
+  }
+  .subscription-icons-icon img {
+    width: 180px;
+  }
+  .diaper_container .diaper_row .media-object {
+    width: 250px;
+  }
+  .diaper_container .diaper_row h1 {
+    font-size: 25px;
+  }
+  .diaper_container .diaper_row h4 {
+    font-size: 21px;
+  }
+  .diaper_container .diaper_ul {
+    padding: 35px;
+  }
+  .diaper_container .diaper_ul li {
+    font-size: 20px;
+  }
+}
+/* ----------- ipad pro ----------- */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1365px) and (-webkit-min-device-pixel-ratio: 1) {
+  .jumbotron {
+    background-image: url('../images/lillydoo-testpaket-header-large.jpg');
+    height: 450px;
+    padding-top: 120px;
+  }
+  .header_text_div {
+    width: 50%;
+    text-align: center;
+  }
+  .header_img_div {
+    position: absolute;
+    right: 2px;
+    top: 70px;
+    width: 130px;
+  }
+  .jumbotron h1 {
+    font-size: 35px !important;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .jumbotron .btn {
+    width: 60%;
+    font-size: 15px;
+    height: 45px;
+    padding: 12px;
+  }
+  .subscription_container h1 {
+    font-size: 25px;
+  }
+  .subscription_container a {
+    font-size: 15px;
+  }
+  .subscription_container h4 {
+    font-size: 17px;
+  }
+  .subscription-icons-item .subcription_p {
+    font-size: 15px;
+  }
+  .diaper_container .diaper_row .media-object {
+    width: 120px;
+  }
+  .diaper_container .diaper_row h1 {
+    font-size: 23px;
+  }
+  .diaper_container .diaper_row h4 {
+    font-size: 16px;
+  }
+  .diaper_container .diaper_ul li {
+    font-size: 15px;
+  }
+}
+
+/* ----------- Desktop ----------- */
+@media screen and (min-device-width: 1366px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .jumbotron {
+    background-image: url('../images/lillydoo-testpaket-header-large.jpg');
+    height: 450px;
+    padding-top: 120px;
+  }
+  .header_text_div {
+    text-align: center;
+  }
+  .header_img_div {
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    width: 165px;
+  }
+  .jumbotron h1 {
+    font-size: 40px !important;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .jumbotron .btn {
+    width: 65%;
+    font-size: 15px;
+    height: 45px;
+    padding: 12px;
+  }
+  .subscription_container h1 {
+    font-size: 25px;
+  }
+  .subscription_container a {
+    font-size: 15px;
+  }
+  .subscription_container h4 {
+    font-size: 17px;
+  }
+  .subscription-icons-item .subcription_p {
+    font-size: 15px;
+  }
+  .diaper_container .diaper_row .media-object {
+    width: 150px;
+  }
+  .diaper_container .diaper_row h1 {
+    font-size: 25px;
+  }
+  .diaper_container .diaper_row h4 {
+    font-size: 17px;
+  }
+  .diaper_container .diaper_ul li {
+    font-size: 15px;
+  }
+}
